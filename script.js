@@ -35,6 +35,9 @@ result.forEach(details1 => {
         arr_countries.push(details1.name);
     }
 });
-console.log(arr_countries);
 
+//another way 
+//console.log(arr_countries);
+var res4=result.filter((ele)=>ele.currencies[0]['code']==='USD').map((ele)=>ele.name);
+//console.log(res4);
 }
